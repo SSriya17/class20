@@ -1,9 +1,9 @@
-var background;
+var backg;
 var cat,catImg1,catImg2,catImg3;
 var mouse,mouseImg1,mouseImg2,mouseImg3;
 function preload() {
 
-    background = loadImage("images/garden.png");
+    backg = loadImage("images/garden.png");
     catImg1 = loadAnimation("images/cat1.png");
     catImg2 = loadAnimation("images/cat2.png", "images/cat3.png");
     catImg3 = loadAnimation("images/cat4.png");
@@ -26,7 +26,7 @@ function setup() {
 
 function draw() {
 
-    // background(background);
+    background(backg);
     if(cat.x - mouse.x < (cat.width - mouse.width)/2)
     { 
         cat.velocityX = 0;
